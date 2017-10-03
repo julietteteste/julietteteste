@@ -1,0 +1,112 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+
+// $xs-width: map-get($grid-breakpoints, xs);
+// $sm-width: map-get($grid-breakpoints, sm);
+// $md-width: map-get($grid-breakpoints, md);
+// $lg-width: map-get($grid-breakpoints, lg);
+// $xl-width: map-get($grid-breakpoints, xl);
+
+// $dark-blue: #1B274E;
+// $yellow: #F2BB12;
+// $light-yellow: #FFCD35;
+
+// .container {
+
+//   @media (min-width: $lg-width) {
+//     width: map-get($container-max-widths, lg);
+//   }
+
+// }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+header {
+
+  h1 {
+    position: fixed;
+    background-color: white;
+    left: 0;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  #about {
+    position: fixed;
+    background-color: white;
+    right: 0;
+    margin: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+}
+
+main {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+
+  #container {
+    background-color: white;
+    max-width: 960px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    visibility: hidden;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover, a:active, a:focus {
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    // cursor: url('../images/hand.ico'), pointer;
+    cursor: pointer;
+  }
+  
+}
+
+footer {
+
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 0 1rem;
+
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
