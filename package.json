@@ -21,6 +21,6 @@
   "scripts": {
     "build": "$(npm bin)/grunt",
     "watch": "$(npm bin)/grunt watch",
-    "dev": "$(npm bin)/reload --dir dist/"
+    "dev": "$(npm bin)/reload --dir docs/"
   }
 }
