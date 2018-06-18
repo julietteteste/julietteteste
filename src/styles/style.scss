@@ -1,22 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 
-// $xs-width: map-get($grid-breakpoints, xs);
-// $sm-width: map-get($grid-breakpoints, sm);
-// $md-width: map-get($grid-breakpoints, md);
-// $lg-width: map-get($grid-breakpoints, lg);
-// $xl-width: map-get($grid-breakpoints, xl);
-
-// $dark-blue: #1B274E;
-// $yellow: #F2BB12;
-// $light-yellow: #FFCD35;
-
-// .container {
-
-//   @media (min-width: $lg-width) {
-//     width: map-get($container-max-widths, lg);
-//   }
-
-// }
+$xs-width: map-get($grid-breakpoints, xs);
+$sm-width: map-get($grid-breakpoints, sm);
+$md-width: map-get($grid-breakpoints, md);
+$lg-width: map-get($grid-breakpoints, lg);
+$xl-width: map-get($grid-breakpoints, xl);
 
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -24,6 +12,8 @@ body {
 }
 
 header {
+
+  display: flex;
 
   h1 {
     position: fixed;
@@ -57,6 +47,12 @@ main {
   align-items: center;
   justify-content: center;
   z-index: -1;
+
+  @media (max-width: $sm-width) {
+    margin: 3rem 0rem;
+    overflow: scroll;
+    align-items: flex-start;
+  }
 
   #container {
     background-color: white;
